@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100vw;
+    position: sticky;
+    background-color: rgb(185, 110, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+
+#search-field {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+#search-button {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-left: 20px;
+    transition: all .1s ease-out;
+    background: linear-gradient(90deg, rgba(255, 236, 12, 1) 0%, rgba(178, 255, 87, 1) 100%);
+}
+
+#search-button:hover {
+    cursor: pointer;
+    transform: translate(0, -2px);
+}
+
+#main-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90vw;
+    margin: auto;
+}
+
+.phone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+
+.phone-container>* {
+    text-align: center;
+}
+
+.show-details {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+
+.show-details:hover {
+    transform: translate(0, -2px);
+}
+
+dialog {
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto;
+    border: none;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.811);
+}
+
+dialog>* {
+    margin: 10px 0;
+}
+
+#close-button,
+#show-all {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+
+#close-button:hover,
+#show-all:hover {
+    transform: translate(0, -2px);
+}
+
+#show-all {
+    background: linear-gradient(90deg, rgba(255, 236, 12, 1) 0%, rgba(178, 255, 87, 1) 100%);
+    margin: 20px 47%;
+    width: 100px;
+    display: none;
+}
